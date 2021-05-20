@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+  background-color: #4ea5d9;
+  padding: 2rem;
+}
+.wrapper h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.todo__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.todo {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #2a4494;
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.todo__cross {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.todo__cross:hover {
+  background-color: #182a5f;
+  border-radius: 999px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.form input:focus {
+  border-color: #2a4494;
+}
+
+.form button {
+  padding: 1rem;
+  background-color: #44cfcb;
+  outline: none;
+  border: 1px solid #44cfcb;
+  border-radius: 10px;
+}
+.form button:active {
+  border-color: #2a4494;
+}
