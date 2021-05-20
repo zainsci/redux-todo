@@ -1,8 +1,14 @@
+import store from "../redux/store";
+import * as actions from "../redux/actions";
+
 const Todo = ({ todo }) => {
   return (
     <li className="todo">
       <div className="todo__name">{todo.text}</div>
-      <div className="todo__cross">
+      <div
+        className="todo__cross"
+        onClick={() => store.dispatch(actions.removeTodo(todo.id))}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
